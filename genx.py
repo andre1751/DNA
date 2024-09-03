@@ -19,3 +19,4 @@ if validate_dna(dna_seq):
     print("Frecuencia:", freq_dict)
 else:
     print("La secuencia de ADN no es válida.")
+#hola profe, :), si tiene problemas para ejecutar en el codespace online porfa intente en el visual studio code. No se porque, pero a mi no me deja aca, thx!.
