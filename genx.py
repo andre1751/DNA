@@ -1,5 +1,5 @@
 def validate_dna():
-    dna_seq = input("Ingrese la secuencia de ADN: ")
+    dna_seq = input("Secuencia de ADN: ")
     seqm = dna_seq.upper()
     valid = seqm.count("A") + seqm.count("C") + seqm.count("G") + seqm.count("T") + seqm.count("X")
     if valid == len(seqm):
@@ -7,6 +7,6 @@ def validate_dna():
     else:
         return False
 if validate_dna():
-    print("La secuencia de ADN es válida.")
+    print("El ADN es válido")
 else:
-    print("La secuencia de ADN no es válida.")
+    print("El ADN no es válido")
