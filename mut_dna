@@ -1,0 +1,18 @@
+def validate_dna(dna_seq):
+    seqm = dna_seq.upper()
+    valid = seqm.count("A") + seqm.count("C") + seqm.count("G") + seqm.count("T")
+    return valid == len(seqm)
+
+dna_seq1 = input("Ingrese la secuencia de ADN #1: ")
+if validate_dna(dna_seq1):
+    dna_seq2 = input("Ingrese la secuencia de ADN #2: ")
+    if validate_dna(dna_seq2):
+        if dna_seq1.upper() == dna_seq2.upper():
+            print ("No existe ninguna mutación de cambio de sentido")
+        else:
+
+            print ("Existe una mutación de cambio de sentido en la cadena de ADN")
+    else:
+        print("La secuencia 2 no es válida")
+else:
+    print("La secuencia no es válida")
